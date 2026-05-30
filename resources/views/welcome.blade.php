@@ -56,9 +56,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="LifeFit Store, boutique fitness pour tapis de course, rameurs, musculation, nutrition sportive et accessoires.">
+    <meta name="description" content="Fitwinnie Store, boutique fitness pour tapis de course, rameurs, musculation, nutrition sportive et accessoires.">
 
-    <title>LifeFit Store | Matériel fitness et nutrition</title>
+    <title>Fitwinnie Store | Matériel fitness et nutrition</title>
 
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600,700,800,900" rel="stylesheet" />
@@ -67,18 +67,18 @@
 </head>
 <body>
     <div class="top-announcement">
-        <p class="contact-line">Contact +225 0719699070</p>
+        <p class="contact-line">Contact +226 77706991</p>
         <div class="marquee" aria-label="Informations boutique">
             <div class="marquee-track">
-                <span>Livraison partout à Abidjan</span>
+                <span>Livraison partout à Ouagadougou</span>
                 <span>Équipez votre salle avec les meilleures machines de musculation</span>
                 <span>Investissez dans la puissance - Votre salle, notre expertise</span>
-                <span>Livraison partout à Abidjan</span>
+                <span>Livraison partout à Ouagadougou</span>
                 <span>Équipez votre salle avec les meilleures machines de musculation</span>
                 <span>Investissez dans la puissance - Votre salle, notre expertise</span>
             </div>
         </div>
-        <p class="currency-line">CFA XOF</p>
+        <p class="currency-line">FCFA XOF</p>
     </div>
 
     <header class="shop-header" data-site-header>
@@ -86,8 +86,8 @@
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
         </button>
 
-        <a class="brand" href="#" aria-label="Accueil LifeFit Store">
-            <span class="brand-box">LifeFit</span>
+        <a class="brand" href="#" aria-label="Accueil Fitwinnie Store">
+            <span class="brand-box">Fitwinnie</span>
         </a>
 
         <form class="search-form" action="#" role="search">
@@ -434,7 +434,7 @@
 
     <footer class="shop-footer">
         <div>
-            <span class="footer-logo">LifeFit</span>
+            <span class="footer-logo">Fitwinnie</span>
             <p>Matériel fitness, musculation, cardio et nutrition sportive pour équiper votre entraînement.</p>
         </div>
         <div>
@@ -452,15 +452,15 @@
         </div>
         <div>
             <h3>Contact</h3>
-            <p>contact@lifefitstore.test</p>
-            <p>+33 1 84 88 42 10</p>
+            <p>fitness.fitwinnie@gmail.com</p>
+            <p>+226 77 70 69 91</p>
             <a href="{{ route('admin.dashboard') }}">Administration</a>
         </div>
     </footer>
 
-    <div class="floating-contact" aria-label="Contact rapide LifeFit Store">
-        <a href="tel:+2250719699070">Appeler</a>
-        <a href="https://wa.me/2250719699070?text=Bonjour%20LifeFit%20Store%2C%20je%20souhaite%20avoir%20des%20informations." target="_blank" rel="noopener">WhatsApp</a>
+    <div class="floating-contact" aria-label="Contact rapide Fitwinnie Store">
+        <a href="tel:+22677706991">Appeler</a>
+        <a href="https://wa.me/22677706991?text=Bonjour%20Fitwinnie%20Store%2C%20je%20souhaite%20avoir%20des%20informations." target="_blank" rel="noopener">WhatsApp</a>
         <a href="#reservation">Demande</a>
     </div>
 </body>

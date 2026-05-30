@@ -32,8 +32,8 @@
             </div>
 
             <div class="admin-login-contact">
-                <a href="tel:+2250719699070">Assistance</a>
-                <a href="mailto:contact@lifefitstore.test">Nous contacter</a>
+                <a href="tel:+22677706991">Assistance</a>
+                <a href="mailto:fitness.fitwinnie@gmail.com">Nous contacter</a>
             </div>
         </section>
 
