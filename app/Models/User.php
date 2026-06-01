@@ -1,0 +1,79 @@
+<?php
+
+namespace App\Models;
+
+// use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Database\Factories\UserFactory;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
+use Spatie\Permission\Traits\HasRoles;
+
+class User extends Authenticatable
+{
+    /** @use HasFactory<UserFactory> */
+    use HasFactory, HasRoles, Notifiable;
+
+    protected $fillable = [
+        'name',
+        'email',
+        'password',
+        'photo',
+        'phone',
+        'address',
+        'birthdate',
+        'locale',
+        'currency',
+        'role_id',
+        'role_name',
+        'status',
+        'created_by',
+        'updated_by',
+        'last_login_at',
+        'two_factor_secret',
+        'two_factor_enabled',
+        'last_action',
+        'preferences',
+        'is_admin',
+        'module_access',
+        'notifications_enabled',
+        'email_verified_at',
+        'remember_token',
+    ];
+
+    protected $hidden = [
+        'password',
+        'remember_token',
+        'two_factor_secret',
+    ];
+
+    /**
+     * Get the attributes that should be cast.
+     *
+     * @return array<string, string>
+     */
+    protected function casts(): array
+    {
+        return [
+            'email_verified_at' => 'datetime',
+            'password' => 'hashed',
+            'last_login_at' => 'datetime',
+            'birthdate' => 'date',
+            'two_factor_enabled' => 'boolean',
+            'notifications_enabled' => 'boolean',
+            'is_admin' => 'boolean',
+            'module_access' => 'array',
+            'preferences' => 'array',
+            'status' => 'boolean',
+        ];
+    }
+
+    public function getPhotoUrlAttribute(): string
+    {
+        if (empty($this->photo)) {
+            return asset('assets/img/profile.jpg');
+        }
+
+        return url('media/public/'.ltrim($this->photo, '/'));
+    }
+}
